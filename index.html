@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre el sistema operativo Zorin OS">
+    <title>Zorin OS - Sistema Operativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function(){
+            emailjs.init("karentcuaran@gmail.com"); // Reemplaza con tu User ID de EmailJS
+        })();
+
+        function sendEmail(event) {
+            event.preventDefault();
+
+            const comment = document.getElementById("comment-text").value;
+
+            emailjs.send("karentcuaran@gmail.com", { // Reemplaza con tus IDs
+                message: comment
+            })
+            .then(() => {
+                alert("Comentario enviado exitosamente!");
+            }, (error) => {
+                alert("Error al enviar el comentario: " + error.text);
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Zorin OS</div>
+            <ul class="nav-links">
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#instalacion">Instalación</a></li>
+                <li><a href="#sitios">Sitios de Interés</a></li>
+                <li><a href="#razones">¿Por qué Zorin?</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Sistema Operativo Zorin</h1>
+        <p>Explora este sitio web para descubrir las ventajas de Zorin OS, un sistema operativo potente y fácil de usar.</p>
+        <p class="subtitle">Una alternativa moderna y amigable a Windows y macOS</p>
+    </header>
+
+    <main>
+        <section id="historia" class="section">
+            <div class="container">
+                <h2>Historia de Zorin OS</h2>
+                <div class="content-box">
+                    <div class="feature-grid">
+                        <div class="feature">
+                            <h3>Inicios</h3>
+                            <p>Zorin OS fue creado por los hermanos Artyom y Kyrill Zorin en 2008. La primera versión se lanzó en 2009 con el objetivo de hacer Linux más accesible para usuarios de Windows.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Evolución</h3>
+                            <p>A lo largo de los años, Zorin OS ha lanzado varias versiones, cada una con mejoras y nuevas características.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Actualidad</h3>
+                            <p>La versión actual ofrece un rendimiento excepcional, un diseño elegante y una experiencia de usuario intuitiva.</p>
+                            <p>Versión actual: Zorin OS 17 (lanzada en 2023)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instalacion" class="section">
+            <div class="container">
+                <h2>Instalación y Configuración</h2>
+                <div class="content-box">
+                    <p>Instalar Zorin OS es sencillo. Encuentra una guía paso a paso y consejos útiles en nuestro video tutorial.</p>
+                    
+                    <div class="video-container">
+                        <!-- Video local usando la etiqueta video -->
+                        <video id="tutorial-video" controls>
+                            <source src="C:\Users\Guillermo Alejandro\Downloads\WhatsApp Video 2024-10-23 at 11.45.13 PM.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sitios" class="section">
+            <div class="container">
+                <h2>Sitios de Interés</h2>
+                <div class="content-box">
+                    <div class="links-grid">
+                        <div class="link-item">
+                            <h3>Página Oficial</h3>
+                            <p>Visita la página oficial de Zorin OS para obtener información completa y recursos descargables.</p>
+                            <a href="https://zorin.com/os/" target="_blank" class="button">Visitar Sitio</a>
+                        </div>
+                        
+                        <div class="link-item">
+                            <h3>Blogs Relevantes</h3>
+                            <p>Mantente actualizado con las últimas noticias y artículos sobre Zorin OS en blogs especializados.</p>
+                        </div>
+                        
+                        <div class="link-item">
+                            <h3>Foros de Usuarios</h3>
+                            <p>Conecta con otros usuarios de Zorin OS en foros y grupos de interés para compartir experiencias y obtener ayuda.</p>
+                            <a href="https://forum.zorin.com" target="_blank" class="button">Ir al Foro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="razones" class="section">
+            <div class="container">
+                <h2>¿Por qué Elegir Zorin OS?</h2>
+                <div class="content-box">
+                    <div class="features-grid">
+                        <div class="feature">
+                            <h3>Facilidad de Uso</h3>
+                            <p>Zorin OS ofrece una interfaz familiar e intuitiva, ideal para usuarios que migran de otros sistemas operativos.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Rendimiento Óptimo</h3>
+                            <p>Diseñado para funcionar de manera eficiente en una variedad de hardware, Zorin OS proporciona una experiencia rápida y fluida.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Seguridad Robusta</h3>
+                            <p>Con características de seguridad integradas, Zorin OS protege tu privacidad y mantiene tu sistema a salvo de amenazas.</p>
+                        </div>
+                    </div>
+
+                    <div class="areas-aplicacion">
+                        <h3>Áreas de Aplicación</h3>
+                        <ul>
+                            <li>Uso doméstico y oficina</li>
+                            <li>Educación</li>
+                            <li>Pequeñas empresas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <div class="container">
+                <h2>Zona de Comentarios y Autores</h2>
+                <div class="content-box">
+                    <div class="authors-grid">
+                        <div class="author-info">
+                            <h3>Referencias</h3>
+                            <ul class="references">
+                                <li>Zorin, A., & Zorin, K. (2008). Zorin OS [Sistema Operativo].</li>
+                                <li>Zorin Group. (2023). Zorin OS 17 [Software].</li>
+                                <li>Zorin Group. (2023). Guía de instalación y configuración de Zorin OS 17.</li>
+                                <li>Zorin Group. (2023). Manual de usuario de Zorin OS: Interfaz y características.</li>
+                            </ul>
+                        </div>
+                        <div class="comments-section">
+                            <h3>Comentarios</h3>
+                            <form id="comment-form" onsubmit="sendEmail(event)">
+                                <textarea placeholder="Deja tu comentario o consulta aquí"></textarea>
+                                <button type="submit">Enviar</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Zorin OS Información. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
